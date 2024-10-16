@@ -1,0 +1,112 @@
+:root {
+  --main-color: #ff6500;
+  --secondary-color: #1e3e62;
+  --third-clr: #1e3e62;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.theme-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggleDark {
+  width: fit-content;
+  font-size: 2rem;
+  padding: 4px;
+  cursor: pointer;
+  color: #ff6500;
+  transition: 0.4s;
+  margin-bottom: 20px;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  min-width: 300px;
+  max-width: 1000px;
+  padding: 32px;
+  aspect-ratio: 1/1;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 24px rgba(255, 101, 0, 0.7);
+}
+
+.dark-quote-container {
+  background-color: black;
+}
+
+#frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 97%;
+  height: 92%;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--main-color);
+}
+
+.quote-text {
+  font-family: roboto, sans-serif;
+  line-height: 1.5;
+  font-size: .85rem;
+}
+
+.quote-author {
+  font-family: "Great Vibes", Helvetica;
+  font-size: 1.5rem;
+}
+
+.control-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 24px;
+}
+
+#new-quote-btn,
+#download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 16px;
+  margin: 10px;
+  /* box-shadow: 0 0 24px rgba(255, 101, 0, 0.7); */
+}
+
+#new-quote-btn:hover,
+#download-btn:hover {
+  box-shadow: 0 0 24px rgba(255, 101, 0, 0.7);
+}
+
+.bi-arrow-clockwise,
+#new-quote-btn > p,
+.bi-save,
+#download-btn > p {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0;
+}
